@@ -2,12 +2,12 @@
 Optimising Intermittent Computing Systems
 <br>
 <br>
-<small>Architecture Reading Group, Wednesday $28^{th}$ October 2020 </small>
+<small>September 2020 </small>
 <br>
 <small>
 Sivert Sliper
 <br>
-Sivert.Sliper@arm.com
+s.sliper@ecs.soton.ac.uk
 </small>
 
 ---
