@@ -1,0 +1,114 @@
+/* ------ Styles ------ */
+#left {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:48%;
+  z-index:-10;
+  font-size: 18pt;
+  /*background-color: #0000ff7f;*/
+}
+
+#leftmid {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  float: left;
+  width:50%;
+  z-index:-10;
+  font-size: 20pt;
+}
+
+#right {
+  top: 75px;
+  float: right;
+  text-align: left;
+  z-index:-10;
+  width:48%;
+  font-size: 20pt;
+  /*background-color: #0000ff7f;*/
+}
+
+#rightright {
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:48%;
+  font-size: 20pt;
+}
+
+#left #figCaption {
+  color: red;
+  font-size: 12pt;
+  text-align: center;
+}
+
+<style>
+  .reveal pre {
+          display: block;
+          position: relative;
+          width: 100%;
+          margin: 0px;
+          text-align: left;
+          font-size: 12pt;
+          font-family: monospace;
+          line-height: 1.2em;
+          word-wrap: break-word;
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .reveal code {
+          font-family: monospace;
+          text-transform: none;
+  }
+
+  .reveal pre code {
+          font-size: 12pt;
+          line-height: 1.2em;
+          display: block;
+          padding: 5px;
+          overflow: auto;
+          max-height: 600px;
+          word-wrap: break-word;
+  }
+
+  .reveal {
+    font-size: 20pt;
+  }
+
+  mark {
+    background-color: #f5f5007f;
+    color: white;
+  }
+
+  figure {
+    /*border: 1px #cccccccc solid;*/
+    width: 100%;
+    padding: 4px;
+    margin: auto;
+  }
+
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    font-size: 12pt;
+    text-align: center;
+  }
+
+  /* Figure boxes */
+
+  .pictureColumn {
+    float: left;
+    width:20%;
+    padding: 5px;
+  }
+  .pictureRow::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+</style>

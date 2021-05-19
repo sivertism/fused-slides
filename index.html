@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Fused demo</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css" id="theme">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+                <!-- Get font-awesome -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+                <!-- my css at the end to override everything else -->
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+
+                <!-- Include slides from markdown -->
+		<div class="reveal">
+			<div class="slides">
+                                <!-- Title slide (in markdown) -->
+				<section        data-markdown="slides.md"
+                                                data-separator="^\r?\n---\r?\n$"
+                                                data-separator-vertical="\n--\n$"
+                                                data-separator-notes="^Note:"
+                                                data-noescape
+                                                >
+                                </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/chalkboard/plugin.js"></script>
+		<script src="plugin/chart/Chart.min.js"></script>
+		<script src="plugin/chart/plugin.js"></script>
+		<script src="plugin/animate/plugin.js"></script>
+		<script src="plugin/animate/svg.min.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                                slideNumber: "c/t",
+                                progress: true,
+                                controls: true,
+                                center: true,
+                                chalkboard: {
+                                  readOnly: false,
+                                  boardmarkers : [
+                                      { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+                                      { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+                                      { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+                                      { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+                                      { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+                                      { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'},
+                                      { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'}
+                                  ]
+                                },
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,
+                                  RevealMath, RevealZoom, RevealChalkboard, RevealChart,
+                                  RevealAnimate]
+			});
+		</script>
+	</body>
+</html>
